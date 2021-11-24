@@ -19,3 +19,15 @@
     @include font-bold;
 
 }
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        @include font-medium-large;
+        color: $text-primary-color;
+        padding: 32px; // TODO: acho que da pra colocar esse cara em algum mixin ou funcao
+    }
+}

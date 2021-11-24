@@ -13,6 +13,7 @@ $text-secondary-color: #989898;
 $black: #000000;
 $white-color: #FFFFFF;
 $gray-color: #FBFBFB;
+$gray-color-2: #e6e6e6;
 $mono-color-1: #00000029;
 $mono-color-2: #0000001A;
 $mono-color-3: #00000033;
@@ -48,83 +49,83 @@ $mono-color-3: #00000033;
 // Fonts Medium
 @mixin font-medium-large {
     @include font-medium;
-    font-size: 24;
+    font-size: 24px;
 }
 
 @mixin font-medium-medium {
     @include font-medium;
-    font-size: 16;
+    font-size: 16px;
 }
 
 @mixin font-medium-small {
     @include font-medium;
-    font-size: 12;
+    font-size: 12px;
 }
 
 @mixin font-medium-x-small {
     @include font-medium;
-    font-size: 8;
+    font-size: 8px;
 }
 
 // Fonts Regular
 @mixin font-regular-large {
     @include font-regular;
-    font-size: 24;
+    font-size: 24px;
 }
 
 @mixin font-regular-medium {
     @include font-regular;
-    font-size: 16;
+    font-size: 16px;
 }
 
 @mixin font-regular-small {
     @include font-regular;
-    font-size: 12;
+    font-size: 12px;
 }
 
 @mixin font-regular-x-small {
     @include font-regular;
-    font-size: 8;
+    font-size: 8px;
 }
 
 // Fonts Semi bold
 @mixin font-semiBold-large {
     @include font-semiBold();
-    font-size: 24;
+    font-size: 24px;
 }
 
 @mixin font-semiBold-medium {
     @include font-semiBold();
-    font-size: 16;
+    font-size: 16px;
 }
 
 @mixin font-semiBold-small {
     @include font-semiBold();
-    font-size: 12;
+    font-size: 12px;
 }
 
 @mixin font-semiBold-x-small {
     @include font-semiBold();
-    font-size: 8;
+    font-size: 8px;
 }
 
 // Fonts Bold
 @mixin font-bold-large {
     @include font-bold;
-    font-size: 24;
+    font-size: 24px;
 }
 
 @mixin font-bold-medium {
     @include font-bold;
-    font-size: 16;
+    font-size: 16px;
 }
 
 @mixin font-bold-small {
     @include font-bold;
-    font-size: 12;
+    font-size: 12px;
 }
 
 @mixin font-bold-x-small {
     @include font-bold;
-    font-size: 8;
+    font-size: 8px;
 }

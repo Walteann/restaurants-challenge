@@ -1,0 +1,40 @@
+@import './../../../styles/variables.scss';
+
+
+
+.input-search {
+    position: relative;
+    &__prefix {
+        background-color: $white-color;
+        @include font-medium-medium;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        bottom: 0;
+        padding: 11px 28px 10px;
+
+    }
+
+    &__input {
+        border: none;
+        width: 800px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $gray-color-2;
+        padding-left: 260px;
+        box-shadow: 0 2px 4px $mono-color-1;
+        outline: none;
+        @include font-medium-medium;
+
+    }
+
+    &__sufixIcon {
+        position: absolute;
+        right: 16px;
+        top: 10px;
+    }
+}
