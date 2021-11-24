@@ -1,0 +1,46 @@
+@import './../index.scss';
+
+// Cores do sistema
+$primary-color: #009CA3;
+$secondary-color: #2B0D61;
+$third-color: #B5ABD4;
+
+//  Cores de Texto
+$text-primary-color: #404040;
+$text-secondary-color: #989898;
+
+// Cores monocromatica
+$black: #000000;
+$white-color: #FFFFFF;
+$gray-color: #FBFBFB;
+$mono-color-1: #00000029;
+$mono-color-2: #0000001A;
+$mono-color-3: #00000033;
+
+
+// Fontes
+
+@mixin font-moutserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font-regular {
+    @include font-moutserrat;
+    font-weight: 400;
+}
+
+@mixin font-medium {
+    @include font-moutserrat;
+    font-weight: 500;
+}
+
+@mixin font-semiBold {
+    @include font-moutserrat;
+    font-weight: 600;
+}
+
+@mixin font-bold {
+    @include font-moutserrat;
+    font-weight: 700;
+}
+

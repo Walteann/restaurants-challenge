@@ -1,0 +1,21 @@
+// @import url('src/');
+@import './../../styles/variables';
+// @import url('./../../styles/variables.scss');
+
+.fontRegular {
+    @include font-regular;
+}
+
+.fontMedium {
+    @include font-medium;
+}
+
+.fontSemibold {
+    @include font-semiBold;
+    
+}
+
+.fontBold {
+    @include font-bold;
+
+}
