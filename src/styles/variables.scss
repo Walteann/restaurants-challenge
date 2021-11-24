@@ -44,3 +44,87 @@ $mono-color-3: #00000033;
     font-weight: 700;
 }
 
+
+// Fonts Medium
+@mixin font-medium-large {
+    @include font-medium;
+    font-size: 24;
+}
+
+@mixin font-medium-medium {
+    @include font-medium;
+    font-size: 16;
+}
+
+@mixin font-medium-small {
+    @include font-medium;
+    font-size: 12;
+}
+
+@mixin font-medium-x-small {
+    @include font-medium;
+    font-size: 8;
+}
+
+// Fonts Regular
+@mixin font-regular-large {
+    @include font-regular;
+    font-size: 24;
+}
+
+@mixin font-regular-medium {
+    @include font-regular;
+    font-size: 16;
+}
+
+@mixin font-regular-small {
+    @include font-regular;
+    font-size: 12;
+}
+
+@mixin font-regular-x-small {
+    @include font-regular;
+    font-size: 8;
+}
+
+// Fonts Semi bold
+@mixin font-semiBold-large {
+    @include font-semiBold();
+    font-size: 24;
+}
+
+@mixin font-semiBold-medium {
+    @include font-semiBold();
+    font-size: 16;
+}
+
+@mixin font-semiBold-small {
+    @include font-semiBold();
+    font-size: 12;
+}
+
+@mixin font-semiBold-x-small {
+    @include font-semiBold();
+    font-size: 8;
+}
+
+// Fonts Bold
+@mixin font-bold-large {
+    @include font-bold;
+    font-size: 24;
+}
+
+@mixin font-bold-medium {
+    @include font-bold;
+    font-size: 16;
+}
+
+@mixin font-bold-small {
+    @include font-bold;
+    font-size: 12;
+}
+
+@mixin font-bold-x-small {
+    @include font-bold;
+    font-size: 8;
+}
