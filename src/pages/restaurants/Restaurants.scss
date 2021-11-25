@@ -38,9 +38,11 @@ header {
 }
 
 .grid-restaurants {
+    margin-top: 5em;
     display: grid;
-    width: 80vw;
-    background-color: lightblue;
+
     grid-template-columns: auto auto auto;
-    // padding: 10%
+    grid-gap: 35px 50px;
+    justify-content: center;
+
 }
