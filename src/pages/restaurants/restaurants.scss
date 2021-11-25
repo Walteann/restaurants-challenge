@@ -31,3 +31,16 @@ header {
         padding: 32px; // TODO: acho que da pra colocar esse cara em algum mixin ou funcao
     }
 }
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-restaurants {
+    display: grid;
+    width: 80vw;
+    background-color: lightblue;
+    grid-template-columns: auto auto auto;
+    // padding: 10%
+}

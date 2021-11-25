@@ -1,8 +1,25 @@
+import { useEffect, useState } from 'react';
+import { CardRestaurant } from '../../shared/components/card-restaurant/CardRestaurant';
 import { InputSearch } from '../../shared/components/input-search/InputSearch';
-import { Nav } from './../../shared/components/nav/Nav';
-import './restaurants.scss';
+import { Nav } from '../../shared/components/nav/Nav';
+import { RestaurantsService } from '../../services/RestaurantsService';
+import './Restaurants.scss';
 
 export const Restaurants = () => {
+    const [restaurants, setRestaurants] = useState([]);
+
+
+    const getAllRestaurants = async () => {
+        const { data }  = await RestaurantsService.getAllRestaurants();
+        console.log(data);
+        setRestaurants(data.body);
+    }
+
+    useEffect(() => {
+        getAllRestaurants();
+
+    }, []);
+
     return (
         <>
             <Nav />
@@ -12,10 +29,12 @@ export const Restaurants = () => {
 
             </header>
 
-            <p className="fontRegular">Fonte Regular</p>
-            <p className="fontMedium">Fonte Medium</p>
-            <p className="fontSemibold">Fonte SemiBold</p>
-            <p className="fontBold">Fonte Bold</p>
+            <section className="grid">
+                <div className="grid-restaurants">
+                    {restaurants.map(restaurant => <CardRestaurant restaurant={restaurant}/>)}
+                </div>
+            </section>
+            
 
         </>
     )

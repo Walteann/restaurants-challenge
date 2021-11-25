@@ -1,0 +1,52 @@
+@import './../../../styles/variables.scss';
+
+.card-restaurant {
+
+    height: 100px;
+    width: 367px;
+    box-shadow: 0px 2px 4px $mono-color-1;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    &__badge {
+        width: 48px;
+        height: 48px;
+        background-color: $secondary-color;
+        position: absolute;
+        right: -19px;
+        top: -18px;
+        text-align: center;
+        box-shadow: 0px 1px 2px $mono-color-1;
+        border-radius: 50%;
+        line-height: 60%;
+        display: flex;
+        align-items: center;
+        span {
+            @include font-bold-x-small;
+            color: $white-color;
+        }
+    }
+
+    &__figure {
+
+        img {
+            width: 100px;
+        }
+    }
+
+    &__content {
+        h2 {
+            @include font-regular-medium;
+        }
+
+        p {
+            @include font-regular-small;
+            padding-right: 10px;
+        }
+    }
+
+}

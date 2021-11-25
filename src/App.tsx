@@ -1,5 +1,5 @@
 import './App.scss';
-import { Restaurants } from './pages/restaurants/restaurants';
+import { Restaurants } from './pages/restaurants/Restaurants';
 
 function App() {
   return (
