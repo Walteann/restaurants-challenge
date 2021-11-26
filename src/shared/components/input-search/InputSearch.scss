@@ -1,6 +1,4 @@
-@import './../../../styles/variables.scss';
-
-
+@import "./../../../styles/variables.scss";
 
 .input-search {
     position: relative;
@@ -16,13 +14,11 @@
         border-bottom-left-radius: 20px;
         bottom: 0;
         padding: 11px 28px 10px;
-
     }
 
     &__input {
         border: none;
-        // max-width: 800px; 
-        min-width: 800px; 
+        min-width: 300px;
         height: 40px;
         border-radius: 20px;
         background-color: $gray-color-2;
@@ -30,7 +26,6 @@
         box-shadow: 0 2px 4px $mono-color-1;
         outline: none;
         @include font-medium-medium;
-
     }
 
     &__sufixIcon {
@@ -38,4 +33,51 @@
         right: 16px;
         top: 10px;
     }
+}
+
+// @media (max-width: 480px) {
+//     .input-search {
+//         &__input {
+//             min-width: 450px;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .input-search {
+
+//         &__input {
+//             min-width: 740px;
+//         }
+//     }
+// }
+
+// @media (min-width: 1280px) {
+//     // .grid-restaurants {
+//     //     grid-template-columns: auto auto auto;
+//     // }
+// }
+
+
+@media (max-width: 575.98px) { 
+    .input-search {
+        &__prefix {
+            display: none;
+        }
+
+        &__input {
+            padding-left: 0;
+        }
+    }    
+}
+
+@media (min-width: 992px) {
+    .input-search {
+        
+    
+        &__input {
+            min-width: 600px;
+        }
+    }    
+
 }
